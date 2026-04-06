@@ -1,4 +1,5 @@
 ﻿// ServiceCenterApp.Domain/Entities/RepairRequest.cs
+using ServiceCenterApp.Domain.Enums;
 namespace ServiceCenterApp.Domain.Entities
 {
     public class RepairRequest

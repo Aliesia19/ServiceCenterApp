@@ -3,6 +3,5 @@
   <Project Path="ServiceCenterApp.Domain/ServiceCenterApp.Domain.csproj" Id="cb43956a-acd4-48a4-b102-922d5dd4f242" />
   <Project Path="ServiceCenterApp.Infrastructure/ServiceCenterApp.Infrastructure.csproj" Id="f9a30416-9614-4003-a54f-b53aed8346cf" />
   <Project Path="ServiceCenterApp.Tests/ServiceCenterApp.Tests.csproj" Id="8ff660be-84b2-4d9b-850b-8fe4870d097a" />
-  <Project Path="ServiceCenterApp.Web/ServiceCenterApp.Web.csproj" Id="4f54fe4b-67a9-498f-ba7a-80bb0e69fd65" />
   <Project Path="ServiceCenterApp/ServiceCenterApp.csproj" />
 </Solution>

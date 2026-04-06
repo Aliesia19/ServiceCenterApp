@@ -6,4 +6,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceCenterApp.Application\ServiceCenterApp.Application.csproj" />
+    <ProjectReference Include="..\ServiceCenterApp.Domain\ServiceCenterApp.Domain.csproj" />
+    <ProjectReference Include="..\ServiceCenterApp.Infrastructure\ServiceCenterApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\ServiceCenterApp.Tests\ServiceCenterApp.Tests.csproj" />
+  </ItemGroup>
+
 </Project>

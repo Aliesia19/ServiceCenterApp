@@ -1,4 +1,5 @@
 ﻿// ServiceCenterApp.Domain/Entities/User.cs
+using ServiceCenterApp.Domain.Enums;
 namespace ServiceCenterApp.Domain.Entities
 {
     public class User
