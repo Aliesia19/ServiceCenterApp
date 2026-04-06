@@ -10,4 +10,13 @@
     <ProjectReference Include="..\ServiceCenterApp.Domain\ServiceCenterApp.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Commands\" />
+    <Folder Include="Mappers\" />
+    <Folder Include="Validators\" />
+    <Folder Include="Queries\" />
+    <Folder Include="UseCases\" />
+  </ItemGroup>
+
 </Project>
