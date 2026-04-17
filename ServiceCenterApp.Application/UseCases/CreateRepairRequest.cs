@@ -1,6 +1,7 @@
 ﻿using ServiceCenterApp.Domain.Entities;
 using ServiceCenterApp.Domain.Enums;
 using ServiceCenterApp.Domain.Interfaces;
+using ServiceCenterApp.Domain.ValueObjects;
 
 public class CreateRepairRequest
 {

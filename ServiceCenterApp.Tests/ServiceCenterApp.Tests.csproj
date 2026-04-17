@@ -6,4 +6,25 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="DataAccess.MsSql\" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+		<PackageReference Include="xunit" Version="2.5.0" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="2.5.0" />
+
+		<PackageReference Include="AutoFixture" Version="4.18.1" />
+		<PackageReference Include="FluentAssertions" Version="8.9.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="10.0.5" />
+		<PackageReference Include="NSubstitute" Version="5.3.0" />
+	</ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceCenterApp.Application\ServiceCenterApp.Application.csproj" />
+	<ProjectReference Include="..\ServiceCenterApp.Infrastructure\ServiceCenterApp.Infrastructure.csproj" />
+	<ProjectReference Include="..\ServiceCenterApp.Domain\ServiceCenterApp.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

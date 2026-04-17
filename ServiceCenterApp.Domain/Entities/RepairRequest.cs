@@ -1,6 +1,7 @@
 ﻿// ServiceCenterApp.Domain/Entities/RepairRequest.cs
 using ServiceCenterApp.Domain.Entities;
 using ServiceCenterApp.Domain.Enums;
+using ServiceCenterApp.Domain.ValueObjects;
 
 public class RepairRequest
 {
@@ -15,8 +16,7 @@ public class RepairRequest
     public User Consultant { get; set; } = null!;
     public EquipmentType? EquipmentType { get; set; }
     public string Description { get; set; } = string.Empty;
-
-    public Address ClientAddress { get; set; } = null!; // <-- замість рядка
+    public Address ClientAddress { get; set; } = null!;
 
     public List<ChecklistItem> Checklist { get; set; } = new();
     public decimal TotalPrice { get; set; }

@@ -5,8 +5,9 @@ namespace ServiceCenterApp.Domain.Interfaces
 {
     public interface IRequestRepository : IRepository<RepairRequest>
     {
-        Task<List<RepairRequest>> GetRequestsByClientIdAsync(Guid clientId);
-        Task<List<RepairRequest>> GetRequestsByMasterIdAsync(Guid masterId);
+        Task<List<RepairRequest>> GetByClientIdAsync(Guid clientId);
+
+        Task<List<RepairRequest>> GetByMasterIdAsync(Guid masterId);
 
         Task<List<RepairRequest>> GetByStatusAsync(RequestStatus status);
     }

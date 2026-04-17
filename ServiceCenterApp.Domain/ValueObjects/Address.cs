@@ -1,21 +1,30 @@
-﻿public class Address
+﻿namespace ServiceCenterApp.Domain.ValueObjects
 {
-    public string Street { get; }
-    public string City { get; }
-    public string ZipCode { get; }
-
-    public Address(string street, string city, string zipCode)
+    public class Address
     {
-        Street = street;
-        City = city;
-        ZipCode = zipCode;
-    }
+        public string Street { get; private set; }
+        public string City { get; private set; }
+        public string ZipCode { get; private set; }
 
-    public override bool Equals(object? obj)
-    {
-        if (obj is not Address other) return false;
-        return Street == other.Street && City == other.City && ZipCode == other.ZipCode;
-    }
+        private Address() { }
 
-    public override int GetHashCode() => HashCode.Combine(Street, City, ZipCode);
+        public Address(string street, string city, string zipCode)
+        {
+            Street = street;
+            City = city;
+            ZipCode = zipCode;
+        }
+
+        public override bool Equals(object? obj)
+        {
+            if (obj is not Address other) return false;
+
+            return Street == other.Street &&
+                   City == other.City &&
+                   ZipCode == other.ZipCode;
+        }
+
+        public override int GetHashCode()
+            => HashCode.Combine(Street, City, ZipCode);
+    }
 }

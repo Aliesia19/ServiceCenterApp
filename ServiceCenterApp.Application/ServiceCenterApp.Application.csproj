@@ -10,9 +10,4 @@
     <ProjectReference Include="..\ServiceCenterApp.Domain\ServiceCenterApp.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Validators\" />
-    <Folder Include="Queries\" />
-  </ItemGroup>
-
 </Project>
